@@ -12,7 +12,7 @@ board_2 = cl.Board(player_2)
 # Deploy ships to the boards
 board_1.deploy_fleet()
 board_2.deploy_fleet()
-print(board_2.my_board)
+
 # Initialize variables
 turn_player1 = ct.ITS_P1_TURN
 turn_player2 = ct.ITS_P2_TURN
