@@ -29,7 +29,12 @@ while True and player_1_lives_left > 0 and player_2_lives_left > 0:
         print('2 - Display your board')
         print("3 - Display your tracking of your enemy's board")
         print('4 - Quit the game\n')
-        choice = int(input('Enter your choice -> '))
+        option = input('Enter your choice -> ')
+        while option not in ['1', '2', '3', '4']:
+            print('Wrong choice. Try again.')
+            option = input('Enter your choice -> ')
+        else:
+            choice = int(option)
 
     if choice == 1:
         if turn_player1:
